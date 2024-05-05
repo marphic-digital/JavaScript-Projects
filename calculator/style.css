@@ -29,4 +29,19 @@
     color: #fff;
     margin: 10px;
     cursor: pointer;
+    text-align: center;
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: end;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
 }
