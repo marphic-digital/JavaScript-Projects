@@ -49,5 +49,28 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    backdrop-filter: blur(40px);
+}
+.clock span{
+    width: 110px;
     font-size: 80px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50px;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'Hours';   
+}
+#min::after{
+    content: 'Mins';   
+}
+#sec::after{
+    content: 'Sec';   
 }
