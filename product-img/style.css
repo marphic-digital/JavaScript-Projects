@@ -50,4 +50,63 @@
 .details p{
     font-size: 13px;
     margin-top: 20px;
+    color: #ebebeb;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.size-select h4{
+    width: 70px;
+}
+.size-select input:checked + span {
+    color: blue;
+    font-weight: 500;
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-select h4{
+    width: 70px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color-1{
+    background: rgb(214, 12, 12);
+}
+.color-2{
+    background: rgb(26, 25, 25);
+}
+.color-3{
+    background: rgb(240, 238, 238);
+}
+.color-4{
+    background: rgb(245, 133, 28);
+}
+.color-select input{
+    display: none;
+}
+.color-select input:checked + span {
+    transform: scale(.7);
+    box-shadow: 0 0 0 4px rgb(19, 228, 228);
 }
