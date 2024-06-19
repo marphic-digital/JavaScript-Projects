@@ -40,7 +40,7 @@ form{
     transition: all .2s ease;
 }
 #search-btn:hover{
-    
+    background: #3cc941;
 }
 .search-results{
     display: flex;
@@ -87,7 +87,8 @@ form{
     cursor: pointer;
     transition: all .2s ease;
     margin: 50px auto 50px auto;
-    display: block;
+    display: none;
+
 }
 #show-btn:hover{
     background: #3f9e42;
