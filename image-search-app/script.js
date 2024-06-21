@@ -15,7 +15,7 @@ async function searchImg(){
     const response = await fetch(url);
     const data = await response.json();
     if (page === 1){
-        searchResultsEl.innerHTML = "";
+        searchResultsEl.innerHTML = '';
     }
 
     const results = data.results;
@@ -36,13 +36,19 @@ async function searchImg(){
         searchResultsEl.appendChild(imageWrapper)
     });
     
+    page++;
+
     if(page > 1){
-        showButtonEl.style.display = block;
+        showButtonEl.style.display = 'block';
     }
 }
 
 formEl.addEventListener('submit', (e) => {
     e.preventDefault();
     page = 1;
+    searchImg();
+})
+
+showButtonEl.addEventListener('click', () => {
     searchImg();
 })
