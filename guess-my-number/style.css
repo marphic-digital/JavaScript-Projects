@@ -53,6 +53,7 @@ main .btn {
   padding: 8px 18px;
   font-size: 18px;
   color: #e4e4e4;
+  cursor: pointer;
 }
 .input P {
   font-size: 18px;
