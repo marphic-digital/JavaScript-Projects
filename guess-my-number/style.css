@@ -67,12 +67,14 @@ header #number {
   border-radius: 5px;
   background-color: rgb(238, 238, 238);
   padding: 8px;
-  font-size: 36px;
+  font-size: 60px;
   color: #494949;
   width: 100px;
   height: 100px;
   margin-top: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .score {
   display: flex;
